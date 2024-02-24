@@ -1,0 +1,26 @@
+
+.latest-blog h4{
+        font-family: "Aleo", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+}
+
+.latest-blog-button {
+    background-color: #F39155;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px 20px 10px;
+}
+
+.latest-blog-button:hover {
+    background-color: #e67e22;
+}
+
+.latest-blog-img {
+    max-width: 200px;
+}
+

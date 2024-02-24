@@ -24,7 +24,9 @@
     max-width: 200px;
 }
 
-.blog-link-title{
+.blog-link,
+.blog-link:focus,
+.blog-link:visited{
     color: inherit;
     text-decoration: none;
 }

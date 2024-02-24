@@ -24,21 +24,23 @@
     max-width: 200px;
 }
 
-.blog-link,
-.blog-link:focus,
-.blog-link:visited{
-    color: inherit;
-    text-decoration: none;
-}
-
 img {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 768px) {
-    .blog-link,
-    .blog-link:focus,
-    .blog-link:visited {
-        color: inherit !important; 
-    }
+.latest-blog {
+    
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 20px; /* Optional: Add spacing between items */
+      
 }
+
+@media screen and (max-width: 700px) {
+    /* Adjust styles for mobile devices */
+    .latest-blog {
+      flex-direction: column; /* Change direction to horizontal */
+      align-items: center;
+    }
+  }

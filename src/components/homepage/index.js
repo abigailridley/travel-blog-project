@@ -10,7 +10,7 @@ const Homepage = () => {
         <h2>Abigail's</h2>
         <h1>Travel Blog</h1>
       </div>
-      <div className="container">
+      <div className="container grid-container">
         <div className='row'>
           <div className='col-md-6'>
             <LatestBlog/>

@@ -6,3 +6,15 @@
     border-radius: 5px;
     margin: 20px
 }
+
+@media screen and (max-width: 700px) {
+  
+    .warning-msg {
+      flex-direction: column; /* Change direction to horizontal */
+      align-items: center;
+      font-size: small;
+    }
+    h2 {
+        font-size: small;
+    }
+  }

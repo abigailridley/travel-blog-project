@@ -1,10 +1,7 @@
-import Gallery from '../gallery/seattle/seattle-gallery'
+import SeattleGallery from '../gallery/seattle-gallery'
 import './blog-post.css'
 
-const images = [
-    'img/seattle/img1.jpeg',
-    './img/seattle/img2.jpeg'
-]
+
 
 const SeattleBlog = () => {
     return ( 
@@ -42,7 +39,7 @@ const SeattleBlog = () => {
             <p className='date-posted'>Posted on Sunday 25.02.24</p>
             </div>
             <div className='gallery'>
-<Gallery images={images}/>
+<SeattleGallery/>
             </div>
         </div>
     )

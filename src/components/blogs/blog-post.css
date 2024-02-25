@@ -1,0 +1,35 @@
+.container {
+    margin-top: 10px;
+}
+
+.seattle-blog h1 {
+   font-family: "Shrikhand", serif;
+   text-align: center;
+   margin: 20px 0 20px 0;
+}
+
+.location-date {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-style: italic;
+  
+}
+.location-date h5 {
+    margin: 0 auto;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: inherit; 
+   
+}
+
+.date-posted {
+    font-size: 12px;
+    text-align: center;
+}

@@ -6,7 +6,7 @@ import Navbar from './components/navbar/index.js';
 import SeattleBlog from './components/blogs/seattle-blog'; // Import the SeattleBlog component
 
 function App() {
-  console.log('Rendering App component');
+  
   return (
     <Router>
       

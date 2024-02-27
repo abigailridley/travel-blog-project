@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'; // Imp
 import './App.css';
 import Homepage from './components/homepage/index.js';
 import Navbar from './components/navbar/index.js';
-import SeattleBlog from './components/blogs/seattle-blog'; // Import the SeattleBlog component
+import SeattleBlog from './components/blogs/seattle-blog'; 
 
 function App() {
   

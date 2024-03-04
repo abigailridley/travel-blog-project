@@ -6,6 +6,15 @@
         font-style: normal;
 }
 
+.latest-blog p {
+    margin: 0 auto;
+    font-family: "Shrikhand", serif;
+}
+.latest-blog h5 {
+    margin: 10px 0 0 0;
+    font-family: "Shrikhand", serif;
+}
+
 .latest-blog-button {
     background-color: #F39155;
     border: none;
@@ -34,6 +43,7 @@ img {
         flex-direction: column; 
         align-items: center; 
         gap: 20px; 
+        justify-content: space-evenly;
       
 }
 
@@ -50,3 +60,4 @@ img {
         font-size: smaller;
     }
   }
+

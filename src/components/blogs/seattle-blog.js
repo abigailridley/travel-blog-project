@@ -22,7 +22,7 @@ const images = [
 
 const SeattleBlog = () => {
     return ( 
-        <div className="container seattle-blog">
+        <div className="container">
             <h1>Seattle Blog</h1>
             <div className='location-date'>
             <h5>Georgetown, Seattle WA</h5>

@@ -1,17 +1,19 @@
 import './latest-blog.css';
 import { Link } from 'react-router-dom';
-import seattle from "./img/gtown-mansion.jpg";
+import portland from "./img/portland-w1.jpeg";
 
 
 const LatestBlog = () => {
     return (
         <div className='latest-blog'>
-           <Link to='/seattle-blog' className='blog-link'>
+           <Link to='/portland-blog' className='blog-link'>
             <button type='button' className='latest-blog-button'>
                 <h4 >Latest blog post</h4>
-                <img src={seattle} alt='img' className='latest-blog-img'/>
-                <h5>Seattle, WA</h5>
-                <p>17.02.24 - 25.02.24</p>
+                <img src={portland} alt='img' className='latest-blog-img'/>
+                <div className='location'>
+                <h5>Portland, OR</h5>
+                <p>25.02.24 - 03.03.24</p>
+                </div>
             </button>
             </Link> 
             

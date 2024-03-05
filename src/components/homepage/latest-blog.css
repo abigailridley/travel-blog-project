@@ -25,6 +25,10 @@
     padding: 10px 20px 20px 20px;
 }
 
+.latest-blog-button .location {
+    color: white;
+}
+
 .latest-blog-button:hover {
     background-color: #e67e22;
 }

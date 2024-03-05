@@ -23,12 +23,12 @@ function CurrentLocationMap () {
    
   });
 
-  const onLoad = React.useCallback(function callback(map) {
+  const onLoad = React.useCallback(function callback() {
     const bounds = new window.google.maps.LatLngBounds(portland);
-   
+    return ( bounds)
   }, [])
 
-  const onUnmount = React.useCallback(function callback(_map){}, [])
+  const onUnmount = React.useCallback(function callback(){}, [])
 
   return isLoaded ? (
     <div className="map-container">
@@ -36,7 +36,7 @@ function CurrentLocationMap () {
       <div>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={10}
+          zoom={5}
           center={portland}
           onLoad={onLoad}
         onUnmount={onUnmount}

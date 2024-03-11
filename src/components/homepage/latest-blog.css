@@ -25,6 +25,9 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 10px 20px 20px 20px;
 }
+.latest-blog-button h4 {
+    color: white;
+}
 
 .latest-blog-button .location {
     color: white;

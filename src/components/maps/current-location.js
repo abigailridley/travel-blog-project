@@ -25,7 +25,7 @@ function CurrentLocationMap () {
 
   const onLoad = React.useCallback(function callback() {
     const bounds = new window.google.maps.LatLngBounds(portland);
-    return ( bounds)
+    return (bounds)
   }, [])
 
   const onUnmount = React.useCallback(function callback(){}, [])

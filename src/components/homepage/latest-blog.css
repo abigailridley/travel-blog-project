@@ -1,47 +1,38 @@
 
-.latest-blog h4{
-        font-family: "Aleo", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
+
+.latest-blog .date {
+    margin-top: 10px;
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    color:white;
+    font-size: 20px;
+   
 }
 
-.latest-blog p {
-    margin: 0 auto;
+.latest-blog h4 {
     font-family: "Shrikhand", serif;
-}
-.latest-blog h5 {
-    margin: 10px 0 0 0;
-    font-family: "Shrikhand", serif;
+    font-size: 30px;
     color: white;
 }
 
 .latest-blog-button {
     background-color: #F39155;
     border: none;
-    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px 20px 20px;
-}
-.latest-blog-button h4 {
-    color: white;
+    padding: 10px 10px 0px 10px;
 }
 
-.latest-blog-button .location {
-    color: white;
-}
 
 .latest-blog-button:hover {
     background-color: #e67e22;
 }
 
 .latest-blog-img {
-    max-width: 200px;
-}
-
-img {
+    max-width: 270px;
     border-radius: 4px;
 }
 
@@ -54,18 +45,4 @@ img {
         justify-content: space-evenly;
       
 }
-
-@media screen and (max-width: 700px) {
-  
-    .latest-blog {
-      flex-direction: column; 
-      align-items: center;
-    }
-    .latest-blog-img {
-        max-width: 150px;
-    }
-    .latest-blog-button {
-        font-size: smaller;
-    }
-  }
 

@@ -16,6 +16,7 @@ const portland = {
   
 };
 
+
 function CurrentLocationMap () {
   const { isLoaded, loadError} = useJsApiLoader({
     id: 'google-map-script',
@@ -34,6 +35,7 @@ function CurrentLocationMap () {
     <div className="map-container">
       
       <div>
+      <h2 className="map-title">Current Location</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={5}
@@ -42,9 +44,10 @@ function CurrentLocationMap () {
         onUnmount={onUnmount}
         >
           <Marker position={portland} />
+        
         </GoogleMap>
       </div>
-      <h2 className="map-title">Current Location</h2>
+      
     </div>
   ) : loadError ? (
     <div>Error loading maps</div>

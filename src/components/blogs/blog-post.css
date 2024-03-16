@@ -1,23 +1,27 @@
 .container {
     margin-top: 10px;
+    
 }
 
 .container h1 {
-   font-family: "Shrikhand", serif;
+    font-family: "Shrikhand", serif;
    text-align: center;
-   margin: 20px 0 20px 0;
+   font-size: 40px;
+   margin: 20px 0 0 0;
 }
 
-.location-date {
+.date {
     font-family: "Aleo", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
   
 }
-.location-date h5 {
-    margin: 0 auto;
+.weeks {
+    font-family: "Shrikhand", serif;
+    font-size: 25px;
 }
 
 a:link,

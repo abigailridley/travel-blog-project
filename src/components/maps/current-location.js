@@ -10,10 +10,10 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const portland = {
-  lat:  45.512359076694025,
-  lng: -122.62552755809351,
-  
+const oakland = {
+  lat:  37.808123100884046,
+  lng: -122.2501924320138
+   
 };
 
 
@@ -25,7 +25,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(portland);
+    const bounds = new window.google.maps.LatLngBounds(oakland);
     return (bounds)
   }, [])
 
@@ -38,12 +38,12 @@ function CurrentLocationMap () {
       <h2 className="map-title">Current Location</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={5}
-          center={portland}
+          zoom={8}
+          center={oakland}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={portland} />
+          <Marker position={oakland} />
         
         </GoogleMap>
       </div>

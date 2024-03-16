@@ -1,5 +1,6 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import React from 'react';
+// import './current-location.css';
 
 
 
@@ -18,7 +19,11 @@ const seattle ={
   lat: 47.54522514901589, 
   lng: -122.3216516502634
 }
-
+const oakland = {
+  lat:  37.808123100884046,
+  lng: -122.2501924320138
+   
+};
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
     id: 'google-map-script',
@@ -40,13 +45,14 @@ function MainMap () {
       <h2 className="map-title">Where we've been</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={5}
+          zoom={4}
           center={portland}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
           <Marker position={portland} />
           <Marker position={seattle} />
+          <Marker position={oakland} />
         </GoogleMap>
       </div>
       

@@ -6,12 +6,14 @@ import Navbar from './components/navbar/index.js';
 import SeattleBlog from './components/blogs/seattle-blog'; 
 import PortlandBlog from './components/blogs/portland-blog.js';
 import Blogs from './components/blogs/blogs-home.js';
+import Footer from './components/footer/footer.js';
+
+
 
 function App() {
   
   return (
     <Router>
-      
         <Navbar />
        
         
@@ -23,7 +25,7 @@ function App() {
 
         </Routes>
 
-      
+      <Footer />
       </Router>
   );
 }

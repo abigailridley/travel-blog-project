@@ -10,12 +10,10 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const oakland = {
-  lat:  37.808123100884046,
-  lng: -122.2501924320138
-   
+const sanfran = {
+  lat:  37.772200831706805,
+  lng:  -122.45766729517509
 };
-
 
 function CurrentLocationMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -25,7 +23,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(oakland);
+    const bounds = new window.google.maps.LatLngBounds(sanfran);
     return (bounds)
   }, [])
 
@@ -39,11 +37,11 @@ function CurrentLocationMap () {
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={8}
-          center={oakland}
+          center={sanfran}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={oakland} />
+          <Marker position={sanfran} />
         
         </GoogleMap>
       </div>

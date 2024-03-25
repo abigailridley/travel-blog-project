@@ -24,6 +24,13 @@ const oakland = {
   lng: -122.2501924320138
    
 };
+
+const sanfran = {
+  lat:  37.772200831706805,
+  lng:  -122.45766729517509
+  
+   
+};
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
     id: 'google-map-script',
@@ -53,6 +60,7 @@ function MainMap () {
           <Marker position={portland} />
           <Marker position={seattle} />
           <Marker position={oakland} />
+          <Marker position={sanfran} />
         </GoogleMap>
       </div>
       

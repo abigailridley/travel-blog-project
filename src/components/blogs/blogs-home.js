@@ -12,7 +12,7 @@ const Blogs = () => {
               
 
                 
-                <Link to='/portland-blog' className='blog-link'>
+                <Link to='/blogs/portland-blog' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>Portland, OR</h5>
                         <img src={portland} alt='img' className='blog-img'/>
@@ -21,7 +21,7 @@ const Blogs = () => {
                         </div>
                     </button>
                 </Link> 
-                <Link to='/seattle-blog' className='blog-link'>
+                <Link to='/blogs/seattle-blog' className='blog-link'>
                     <button type='button' className='blog-button'>
                     <h5>Seattle, WA</h5>
                         <img src={seattle} alt='img' className='blog-img'/>

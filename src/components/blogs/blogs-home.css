@@ -1,5 +1,5 @@
 .blogs-page {
-    height: 100vh;
+    height: 100%;
     background-color: #e67e22 ;
     font-family: "Shrikhand", serif;
     padding-bottom: 20px;
@@ -73,7 +73,7 @@
         margin: 40px 0 30px 0;
     }
     .blogs-page {
-        height: 120vh;
+        height: 100%;
     } 
 
 }

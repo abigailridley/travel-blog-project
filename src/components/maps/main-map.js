@@ -28,8 +28,6 @@ const oakland = {
 const sanfran = {
   lat:  37.772200831706805,
   lng:  -122.45766729517509
-  
-   
 };
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({

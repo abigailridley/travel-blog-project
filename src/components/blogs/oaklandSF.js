@@ -2,29 +2,30 @@ import Gallery from '../gallery/gallery'
 import './blog-post.css'
 
 const images = [
-    { src: require('./img/seattle/img1.jpg'), alt: 'Image 1' },
-    { src: require('./img/seattle/img2.jpg'), alt: 'Image 2' },
-    { src: require('./img/seattle/img3.jpg'), alt: 'Image 3' },
-    { src: require('./img/seattle/img4.jpg'), alt: 'Image 4' },
-    { src: require('./img/seattle/img5.jpg'), alt: 'Image 5' },
-    { src: require('./img/seattle/img6.jpg'), alt: 'Image 6' },
-    { src: require('./img/seattle/img7.jpg'), alt: 'Image 7' },
-    { src: require('./img/seattle/img8.jpg'), alt: 'Image 8' },
-    { src: require('./img/seattle/img9.jpg'), alt: 'Image 9' },
-    { src: require('./img/seattle/img10.jpg'), alt: 'Image 10' },
-    { src: require('./img/seattle/img11.jpg'), alt: 'Image 11' },
-    { src: require('./img/seattle/img12.jpg'), alt: 'Image 12' },
-    { src: require('./img/seattle/img13.jpg'), alt: 'Image 13' },
-    { src: require('./img/seattle/img14.jpg'), alt: 'Image 14' },
-    { src: require('./img/seattle/img15.jpg'), alt: 'Image 15' }
+    { src: require('./img/california/oaklandsf/img1.jpg'), alt: 'Image 1' },
+    { src: require('./img/california/oaklandsf/img2.jpg'), alt: 'Image 2' },
+    { src: require('./img/california/oaklandsf/img3.jpg'), alt: 'Image 3' },
+    { src: require('./img/california/oaklandsf/img4.jpg'), alt: 'Image 4' },
+    { src: require('./img/california/oaklandsf/img5.jpg'), alt: 'Image 5' },
+    { src: require('./img/california/oaklandsf/img6.jpg'), alt: 'Image 6' },
+    { src: require('./img/california/oaklandsf/img7.jpg'), alt: 'Image 7' },
+    { src: require('./img/california/oaklandsf/img8.jpg'), alt: 'Image 8' },
+    { src: require('./img/california/oaklandsf/img9.jpg'), alt: 'Image 9' },
+    { src: require('./img/california/oaklandsf/img10.jpg'), alt: 'Image 10' },
+    { src: require('./img/california/oaklandsf/img11.jpg'), alt: 'Image 11' },
+    { src: require('./img/california/oaklandsf/img12.jpg'), alt: 'Image 12' },
+    { src: require('./img/california/oaklandsf/img13.jpg'), alt: 'Image 13' },
+    { src: require('./img/california/oaklandsf/img14.jpg'), alt: 'Image 14' },
+    { src: require('./img/california/oaklandsf/img15.jpg'), alt: 'Image 15' },
+    { src: require('./img/california/oaklandsf/img16.jpg'), alt: 'Image 16' },
+    { src: require('./img/california/oaklandsf/img17.jpg'), alt: 'Image 17' }
   ];
 
-const SeattleBlog = () => {
+const OaklandSFBlog = () => {
     return ( 
         <div className="container">
-            <h1>Seattle Blog</h1>
-            <div className='location-date'>
-            <h5>Georgetown, Seattle WA</h5>
+            <h1>Oakland & San Francisco, California</h1>
+            <div className='date'>
             <p>17.02.24 - 25.02.24</p>
             </div>
             <div className='blog-container'>
@@ -62,4 +63,4 @@ const SeattleBlog = () => {
     )
 }
 
-export default SeattleBlog
+export default OaklandSFBlog

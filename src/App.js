@@ -6,7 +6,7 @@ import Navbar from './components/navbar/index.js';
 import SeattleBlog from './components/blogs/seattle-blog'; 
 import PortlandBlog from './components/blogs/portland-blog.js';
 import Blogs from './components/blogs/blogs-home.js';
-// import Footer from './components/footer/footer.js';
+import Footer from './components/footer/footer.js';
 import OaklandSFBlog from './components/blogs/oakland-sf-blog.js';
 
 
@@ -27,7 +27,7 @@ function App() {
 
         </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
       </Router>
   );
 }

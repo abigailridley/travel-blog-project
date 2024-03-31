@@ -23,7 +23,7 @@ const images = [
 
 const OaklandSFBlog = () => {
     return ( 
-        <div className="container">
+        <div className="container blog-post">
             <h1>Oakland & San Francisco, California</h1>
             <div className='date'>
             <p>17.02.24 - 25.02.24</p>

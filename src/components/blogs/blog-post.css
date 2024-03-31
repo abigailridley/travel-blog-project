@@ -1,8 +1,7 @@
-.container {
+.blog-post {
     margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    
+    /* flex-direction: column; */
 }
 
 .container h1 {

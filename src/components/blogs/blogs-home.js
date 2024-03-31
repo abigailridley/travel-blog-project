@@ -21,7 +21,7 @@ const Blogs = () => {
                         </div>
                     </button>
                 </Link> 
-                <Link to='/blogs/seattle-blog' className='blog-link'>
+                <Link to='/blogs/seattle-blog'>
                     <button type='button' className='blog-button'>
                     <h5>Seattle, WA</h5>
                         <img src={seattle} alt='img' className='blog-img'/>

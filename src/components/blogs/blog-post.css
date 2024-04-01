@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
 }
+/* .blog-container {
+    display: flex;
+} */
 
 .container h1 {
     font-family: "Shrikhand", serif;

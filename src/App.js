@@ -8,8 +8,7 @@ import PortlandBlog from './components/blogs/portland-blog.js';
 import Blogs from './components/blogs/blogs-home.js';
 import Footer from './components/footer/footer.js';
 import OaklandSFBlog from './components/blogs/oakland-sf-blog.js';
-
-
+import SanFranBlog from './components/blogs/sanfran-blog.js';
 
 function App() {
   
@@ -23,6 +22,7 @@ function App() {
           <Route path="/blogs/seattle-blog" element={<SeattleBlog />} />
           <Route path ="/blogs/portland-blog" element={<PortlandBlog/>}/>
           <Route path ="/blogs/oakland-sf-blog" element={<OaklandSFBlog/>}/>
+          <Route path ="/blogs/sanfran-blog" element={<SanFranBlog/>}/>
           <Route path = "/blogs" element={<Blogs/>}/>
 
         </Routes>

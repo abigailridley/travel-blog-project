@@ -1,5 +1,5 @@
 .gallery {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
@@ -42,3 +42,9 @@
     background-color: #e67e22;
   }
   
+  @media screen and (max-width: 980px) {
+    .gallery-image {
+      max-width: 100%;
+    }
+
+  }

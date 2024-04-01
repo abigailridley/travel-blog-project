@@ -1,41 +1,49 @@
 
 .subscribe-form {
-    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Aleo", serif;
   }
   
 
   .subscribe-form input[type="email"] {
-    /* Add your input field styles here */
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-style: italic;
+    text-transform: lowercase;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
+    font-size: 22px;
+
   }
   
-  /* Styles for the submit button */
+
   .subscribe-form button {
-    /* Add your button styles here */
-    padding: 10px 20px;
-    background-color: #007bff;
+   
+    padding: 5px 10px;
+    font-style: italic;
+    text-transform: lowercase;
+    background-color: #D0417E;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
     margin-left: 5px;
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
   }
   
   .subscribe-form button:hover {
-    background-color: #0056b3;
+    background-color: #d0417fd0;
   }
   
-  /* Styles for the FontAwesome icon */
-  .fa-inbox {
-    /* Add your FontAwesome icon styles here */
-    color: #007bff;
-    font-size: 24px;
+  .subscribe-msg p {
+    font-size: 26px;
+    font-weight: 600;
   }
-  

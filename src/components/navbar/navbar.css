@@ -10,3 +10,12 @@
 .nav-list {
     font-family: "Aleo", serif;
 }
+
+.navbar-nav .nav-link.active {
+    color: #F39155 !important;
+}
+
+
+.nav-link:hover {
+     color: #F39155 !important;
+}

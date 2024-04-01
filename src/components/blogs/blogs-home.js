@@ -2,6 +2,7 @@ import './blogs-home.css';
 import { Link } from 'react-router-dom';
 import seattle from "../homepage/img/gtown-mansion.jpg";
 import portland from "../homepage/img/portland-w1.jpeg";
+import oaksf from "../homepage/img/oaksf.jpeg";
 import MainMap from '../maps/main-map';
 
 const Blogs = () => {
@@ -11,13 +12,21 @@ const Blogs = () => {
             <div className='container'>
               
 
-                
+            <Link to='/blogs/oakland-sf-blog' className='blog-link'>
+                    <button type='button' className='blog-button'> 
+                    <h5>San Francisco, CA</h5>
+                        <img src={oaksf} alt='img' className='blog-img'/>
+                        <div className='location'>
+                            <p>15.03.24 - 25.03.24</p>
+                        </div>
+                    </button>
+                </Link> 
                 <Link to='/blogs/portland-blog' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>Portland, OR</h5>
                         <img src={portland} alt='img' className='blog-img'/>
                         <div className='location'>
-                            <p>25.02.24 - 03.03.24</p>
+                            <p>25.02.24 - 15.03.24</p>
                         </div>
                     </button>
                 </Link> 

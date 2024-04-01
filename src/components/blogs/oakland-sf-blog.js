@@ -26,7 +26,7 @@ const OaklandSFBlog = () => {
         <div className="container blog-post">
             <h1>Oakland & San Francisco, California</h1>
             <div className='date'>
-            <p>17.02.24 - 25.02.24</p>
+            <p>15.03.24 - 23.03.24</p>
             </div>
             <div className='blog-container'>
             <p>

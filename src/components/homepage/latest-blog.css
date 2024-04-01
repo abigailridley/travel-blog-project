@@ -1,20 +1,26 @@
 
 
 .latest-blog .date {
-    margin-top: 10px;
+    
     font-family: "Aleo", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
     color:white;
-    font-size: 20px;
+    font-size: 23px;
    
 }
 
+.latest-blog h3 {
+    font-family: "Shrikhand", serif;
+    font-size: 30px;
+    color: #2e4c74;
+}
 .latest-blog h4 {
     font-family: "Shrikhand", serif;
     font-size: 30px;
     color: white;
+    margin: 10px 0 0 0;
 }
 
 .latest-blog-button {

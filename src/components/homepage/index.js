@@ -1,6 +1,6 @@
 import './style.css'; 
 import LatestBlog from './latest-blog';
-import WarningMsg from "./warning";
+// import WarningMsg from "./warning";
 import CurrentLocationMap from '../maps/current-location';
 
 
@@ -11,10 +11,10 @@ const Homepage = () => {
         <h2>Abigail's</h2>
         <h1>Travel Blog</h1>
       </div>
-      <div className="grid-container">
+      <div className="container">
         <LatestBlog />
         <CurrentLocationMap />
-        <WarningMsg />
+       
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const images = [
 
 const SeattleBlog = () => {
     return ( 
-        <div className="container">
+        <div className="container blog-post">
             <h1>Seattle Blog</h1>
             <div className='location-date'>
             <h5>Georgetown, Seattle WA</h5>

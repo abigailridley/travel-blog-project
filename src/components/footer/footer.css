@@ -47,3 +47,17 @@
     font-size: 26px;
     font-weight: 600;
   }
+
+  @media screen and (max-width: 800px) {
+.subscribe-form button {
+  font-size: 15px;
+}
+
+.subscribe-form input[type="email"] {
+  font-size: 15px;
+}
+
+.subscribe-msg p {
+  font-size: 18px;
+}
+  }

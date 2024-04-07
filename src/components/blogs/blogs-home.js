@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import seattle from "../homepage/img/gtown-mansion.jpg";
 import portland from "../homepage/img/portland-w1.jpeg";
 import oaksf from "../homepage/img/oaksf.jpeg";
+import sanfran from "../homepage/img/sanfran.jpeg"
+import sanfranp2 from "../homepage/img/sanfranp2.jpeg"
 import MainMap from '../maps/main-map';
 
 const Blogs = () => {
@@ -10,8 +12,25 @@ const Blogs = () => {
         <div className='blogs-page'>
            <h1 className='title'>Blogs</h1>
             <div className='container'>
-              
-
+            <div className='main-map'> <MainMap /></div>
+            <Link to='/blogs/sanfran-blog-p2' className='blog-link'>
+                    <button type='button' className='blog-button'> 
+                    <h5>San Francisco, CA</h5>
+                        <img src={sanfranp2} alt='img' className='blog-img'/>
+                        <div className='location'>
+                            <p>31.03.24 - 07.04.24</p>
+                        </div>
+                    </button>
+                </Link> 
+            <Link to='/blogs/sanfran-blog' className='blog-link'>
+                    <button type='button' className='blog-button'> 
+                    <h5>San Francisco, CA</h5>
+                        <img src={sanfran} alt='img' className='blog-img'/>
+                        <div className='location'>
+                            <p>25.03.24 - 31.03.24</p>
+                        </div>
+                    </button>
+                </Link> 
             <Link to='/blogs/oakland-sf-blog' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>San Francisco, CA</h5>
@@ -42,7 +61,7 @@ const Blogs = () => {
                 </Link> 
                 
             
-            <div className='main-map'> <MainMap /></div>
+            
             </div>
         </div>
     );

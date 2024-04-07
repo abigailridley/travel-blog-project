@@ -10,9 +10,10 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const sanfran = {
-  lat:  37.772200831706805,
-  lng:  -122.45766729517509
+const monterey = {
+  lat: 36.61619346845562,
+  lng:   -121.90191862496427
+  
 };
 
 function CurrentLocationMap () {
@@ -23,7 +24,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(sanfran);
+    const bounds = new window.google.maps.LatLngBounds(monterey);
     return (bounds)
   }, [])
 
@@ -37,11 +38,11 @@ function CurrentLocationMap () {
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={8}
-          center={sanfran}
+          center={monterey}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={sanfran} />
+          <Marker position={monterey} />
         
         </GoogleMap>
       </div>

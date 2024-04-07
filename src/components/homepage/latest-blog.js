@@ -1,6 +1,6 @@
 import './latest-blog.css';
 import { Link } from 'react-router-dom';
-import sanfran from "./img/sanfran.jpeg";
+import sanfranp2 from "./img/sanfranp2.jpeg";
 
 
 const LatestBlog = () => {
@@ -9,10 +9,10 @@ const LatestBlog = () => {
            <Link to='/blogs/sanfran-blog' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
-                <img src={sanfran} alt='img' className='latest-blog-img'/>
+                <img src={sanfranp2} alt='img' className='latest-blog-img'/>
                 <h4>San Francisco, CA</h4>
                 <div className='date'>
-                <p>23.03.24 - 31.03.24</p>
+                <p>31.03.24 - 07.04.24</p>
                 </div>
             </button>
             </Link> 

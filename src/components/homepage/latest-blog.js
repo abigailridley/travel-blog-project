@@ -6,7 +6,7 @@ import sanfranp2 from "./img/sanfranp2.jpeg";
 const LatestBlog = () => {
     return (
         <div className='latest-blog'>
-           <Link to='/blogs/sanfran-blog' >
+           <Link to='/blogs/sanfran-blog-p2' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
                 <img src={sanfranp2} alt='img' className='latest-blog-img'/>

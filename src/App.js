@@ -5,7 +5,7 @@ import Homepage from './components/homepage/index.js';
 import Navbar from './components/navbar/index.js';
 import Blogs from './components/blogs/blogs-home.js';
 import Maps from './components/maps/maps.js';
-import AboutMe from './components/aboutme/index.js';
+import About from './components/about/index.js';
 import Footer from './components/footer/footer.js';
 import SeattleBlog from './components/blogs/seattle-blog'; 
 import PortlandBlog from './components/blogs/portland-blog.js';
@@ -30,7 +30,7 @@ function App() {
           <Route path ="/blogs/sanfran-blog-p2" element={<SanFranBlogP2/>}/>
           <Route path = "/blogs" element={<Blogs/>}/>
           <Route path = "/map" element={<Maps/>}/>
-          <Route path = "/aboutme" element={<AboutMe/>}/>
+          <Route path = "/about" element={<About/>}/>
 
         </Routes>
 

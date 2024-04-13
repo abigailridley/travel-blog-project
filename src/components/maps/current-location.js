@@ -10,11 +10,16 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const monterey = {
-  lat: 36.61619346845562,
-  lng:   -121.90191862496427
-  
+const losangeles = {
+  lat: 34.018795251541015,
+  lng:  -118.49261637166784
+   
 };
+
+const center = {
+  lat:34.05553939731194, 
+  lng: -118.24832063855436
+}
 
 function CurrentLocationMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -24,7 +29,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(monterey);
+    const bounds = new window.google.maps.LatLngBounds(losangeles);
     return (bounds)
   }, [])
 
@@ -37,12 +42,12 @@ function CurrentLocationMap () {
       <h2 className="map-title">Current Location</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={8}
-          center={monterey}
+          zoom={9}
+          center={center}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={monterey} />
+          <Marker position={losangeles} />
         
         </GoogleMap>
       </div>

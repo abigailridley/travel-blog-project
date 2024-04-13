@@ -5,9 +5,16 @@ import React from 'react';
 
 
 const mapContainerStyle = {
-  width: '260px', 
-  height: '260px', 
+  width: '290px', 
+  height: '290px', 
   borderRadius: '10px', 
+};
+
+const center = {
+  // lat:   42.41077096333509,
+  // lng:   -123.44478414481655
+  lat: 42.857164919166394, 
+  lng: -118.05956862267394
 };
 
 const portland = {
@@ -33,8 +40,14 @@ const sanfran = {
 const monterey = {
   lat: 36.61619346845562,
   lng:   -121.90191862496427
-  
 };
+
+const losangeles = {
+  lat: 34.018795251541015,
+  lng:  -118.49261637166784 
+};
+
+
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
     id: 'google-map-script',
@@ -56,8 +69,8 @@ function MainMap () {
       <h2 className="main-map-title">Where we've been</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={3}
-          center={portland}
+          zoom={4}
+          center={center}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
@@ -66,6 +79,7 @@ function MainMap () {
           <Marker position={oakland} />
           <Marker position={sanfran} />
           <Marker position={monterey} />
+          <Marker position={losangeles} />
         </GoogleMap>
       </div>
       

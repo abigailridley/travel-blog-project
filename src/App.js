@@ -12,6 +12,7 @@ import PortlandBlog from './components/blogs/portland-blog.js';
 import OaklandSFBlog from './components/blogs/oakland-sf-blog.js';
 import SanFranBlog from './components/blogs/sanfran-blog.js';
 import SanFranBlogP2 from './components/blogs/sanfran-blog-p2.js';
+import MontereyBlog from './components/blogs/monterey-blog.js';
 
 
 function App() {
@@ -23,15 +24,15 @@ function App() {
         
         <Routes> 
           <Route path="/" element={<Homepage />} />
-          <Route path="/blogs/seattle-blog" element={<SeattleBlog />} />
-          <Route path ="/blogs/portland-blog" element={<PortlandBlog/>}/>
-          <Route path ="/blogs/oakland-sf-blog" element={<OaklandSFBlog/>}/>
-          <Route path ="/blogs/sanfran-blog" element={<SanFranBlog/>}/>
-          <Route path ="/blogs/sanfran-blog-p2" element={<SanFranBlogP2/>}/>
+          <Route path="/blogs/seattle" element={<SeattleBlog />} />
+          <Route path ="/blogs/portland" element={<PortlandBlog/>}/>
+          <Route path ="/blogs/oakland-sf" element={<OaklandSFBlog/>}/>
+          <Route path ="/blogs/sanfran" element={<SanFranBlog/>}/>
+          <Route path ="/blogs/sanfran-p2" element={<SanFranBlogP2/>}/>
+          <Route path ="/blogs/monterey" element={<MontereyBlog/>}/>
           <Route path = "/blogs" element={<Blogs/>}/>
           <Route path = "/map" element={<Maps/>}/>
           <Route path = "/about" element={<About/>}/>
-
         </Routes>
 
       <Footer />

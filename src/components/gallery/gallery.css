@@ -1,50 +1,81 @@
-.gallery {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    margin-top: 50px; /* Adjust margin as needed */
-  }
-  
-  .image-container {
-    margin-bottom: 20px; /* Add margin between images and buttons */
-  }
-  
-  .gallery-image {
-    max-width: 70%; /* Adjust image size */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center image horizontally */
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center horizontally */
-    margin-top: 1rem; /* Add some margin between the image and the buttons */
-    font-family: "Shrikhand", serif;
-    
-   
-  }
-  
-  .controls button {
-    margin: 0 0.5rem;
-    margin-bottom: 50px;
-    padding: 0.5rem 1rem;
-    background-color: #F39155;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
-  .controls button:hover {
-    background-color: #e67e22;
-  }
-  
-  @media screen and (max-width: 980px) {
-    .gallery-image {
-      max-width: 100%;
-    }
 
-  }
+
+
+.gallery {
+  position: relative; /* Add relative positioning */
+  margin-top: 50px;
+}
+
+.image-container {
+  position: relative; /* Add relative positioning */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery-image {
+  max-width: 85%;
+
+}
+
+.image-number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: #fff;
+}
+
+.image-panel-left,
+.image-panel-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-panel-left {
+  left: 0;
+}
+
+.image-panel-right {
+  right: 0;
+}
+
+.control-button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.287);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Add space between the buttons */
+  align-items: center;
+
+}
+.control-button:hover {
+  background-color: rgba(0, 0, 0, 0.124);
+}
+
+.gallery-image {
+  max-width: 85%;
+  transition: transform 0.3s ease; /* Add transition for smooth enlargement */
+}
+
+.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5); /* Adjust scale as needed */
+  z-index: 9999; /* Ensure the enlarged image is on top of other content */
+}
+

@@ -1,93 +1,61 @@
-import React, { useState } from 'react';
-import './gallery.css'
+import React, { useState, useEffect, useCallback } from 'react';
+import './gallery.css';
 
 const Gallery = ({ images }) => {
-    // State to track the index of the currently displayed image
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isEnlarged, setIsEnlarged] = useState(false);
 
-    // Function to handle clicking on the next button
-    const nextImage = () => {
+    const nextImage = useCallback(() => {
         setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    };
+        setIsEnlarged(false); // Reset enlargement when changing images
+    }, [images.length]);
 
-    // Function to handle clicking on the previous button
-    const prevImage = () => {
+    const prevImage = useCallback(() => {
         setCurrentImageIndex(prevIndex =>
             prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
+        setIsEnlarged(false); // Reset enlargement when changing images
+    }, [images.length]);
+
+    const toggleEnlargement = () => {
+        setIsEnlarged(!isEnlarged);
     };
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'ArrowRight') {
+                nextImage();
+            } else if (event.key === 'ArrowLeft') {
+                prevImage();
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [currentImageIndex, nextImage, prevImage]);
 
     return (
         <div className="gallery">
             <div className="image-container">
-                {/* Display the current image */}
-                <img className='gallery-image' src={images[currentImageIndex].src} alt={images[currentImageIndex].alt} />
-            </div>
-            <div className="controls">
-                {/* Button to show the previous image */}
-                <button onClick={prevImage}>Previous</button>
-                {/* Button to show the next image */}
-                <button onClick={nextImage}>Next</button>
+                <div className="image-panel-left">
+                    <button className="control-button" onClick={prevImage}>&lt;</button>
+                </div>
+                <div className="image" onClick={toggleEnlargement} style={{ cursor: 'pointer' }}>
+                    <img
+                        className={isEnlarged ? 'gallery-image enlarged' : 'gallery-image'}
+                        src={images[currentImageIndex].src}
+                        alt={images[currentImageIndex].alt}
+                    />
+                    <div className="image-number">{currentImageIndex + 1}/{images.length}</div>
+                </div>
+                <div className="image-panel-right">
+                    <button className="control-button" onClick={nextImage}>&gt;</button>
+                </div>
             </div>
         </div>
     );
 };
 
 export default Gallery;
-
-
-// import React, { useState } from 'react';
-
-// const Gallery = () => {
-//   // Define an array of image objects with src and alt attributes
-//   const images = [
-//     { src: require('./img/seattle/img1.jpg'), alt: 'Image 1' },
-//     { src: require('./img/seattle/img2.jpg'), alt: 'Image 2' },
-//     { src: require('./img/seattle/img3.jpg'), alt: 'Image 3' },
-//     { src: require('./img/seattle/img4.jpg'), alt: 'Image 4' },
-//     { src: require('./img/seattle/img5.jpg'), alt: 'Image 5' },
-//     { src: require('./img/seattle/img6.jpg'), alt: 'Image 6' },
-//     { src: require('./img/seattle/img7.jpg'), alt: 'Image 7' },
-//     { src: require('./img/seattle/img8.jpg'), alt: 'Image 8' },
-//     { src: require('./img/seattle/img9.jpg'), alt: 'Image 9' },
-//     { src: require('./img/seattle/img10.jpg'), alt: 'Image 10' },
-//     { src: require('./img/seattle/img11.jpg'), alt: 'Image 11' },
-//     { src: require('./img/seattle/img12.jpg'), alt: 'Image 12' },
-//     { src: require('./img/seattle/img13.jpg'), alt: 'Image 13' },
-//     { src: require('./img/seattle/img14.jpg'), alt: 'Image 14' },
-//     { src: require('./img/seattle/img15.jpg'), alt: 'Image 15' }
-//     // Add more image objects as needed
-//   ];
-
-//   // State to track the index of the currently displayed image
-//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-//   // Function to handle clicking on the next button
-//   const nextImage = () => {
-//     setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-//   };
-
-//   // Function to handle clicking on the previous button
-//   const prevImage = () => {
-//     setCurrentImageIndex(prevIndex =>
-//       prevIndex === 0 ? images.length - 1 : prevIndex - 1
-//     );
-//   };
-
-//   return (
-//     <div className="gallery">
-//       <div className="image-container">
-//         {/* Display the current image */}
-//         <img src={images[currentImageIndex].src} alt={images[currentImageIndex].alt} />
-//       </div>
-//       <div className="controls">
-//         {/* Button to show the previous image */}
-//         <button onClick={prevImage}>Previous</button>
-//         {/* Button to show the next image */}
-//         <button onClick={nextImage}>Next</button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Gallery;

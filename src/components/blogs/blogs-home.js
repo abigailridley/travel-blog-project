@@ -32,7 +32,7 @@ const Blogs = () => {
                         </div>
                     </button>
                 </Link> 
-            <Link to='/blogs/sanfran-blog' className='blog-link'>
+            <Link to='/blogs/sanfran' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>San Francisco, CA</h5>
                         <img src={sanfran} alt='img' className='blog-img'/>

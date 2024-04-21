@@ -11,7 +11,7 @@
   }
   
   .gallery-image {
-    max-width: 80%; /* Adjust image size */
+    max-width: 70%; /* Adjust image size */
     height: auto;
     display: block;
     margin: 0 auto; /* Center image horizontally */

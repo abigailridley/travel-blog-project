@@ -1,6 +1,3 @@
-
-
-
 .gallery {
   position: relative; /* Add relative positioning */
   margin-top: 50px;
@@ -13,8 +10,7 @@
 }
 
 .gallery-image {
-  max-width: 85%;
-
+  max-width: 75%;
 }
 
 .image-number {
@@ -29,7 +25,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +47,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .controls {
   position: absolute;
   top: 0;
@@ -60,14 +57,15 @@
   display: flex;
   justify-content: space-between; /* Add space between the buttons */
   align-items: center;
-
 }
+
 .control-button:hover {
   background-color: rgba(0, 0, 0, 0.124);
 }
 
+/* Enlarged image */
 .gallery-image {
-  max-width: 85%;
+  max-width: 75%;
   transition: transform 0.3s ease; /* Add transition for smooth enlargement */
 }
 
@@ -79,3 +77,15 @@
   z-index: 9999; /* Ensure the enlarged image is on top of other content */
 }
 
+/* Media query for mobile screens */
+@media only screen and (max-width: 750px) {
+  .gallery-image {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .image-panel-left,
+.image-panel-right {
+
+  width: 10%;
+}
+}

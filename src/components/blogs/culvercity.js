@@ -41,6 +41,7 @@ const MontereyBlog = () => {
         <p>
         We had our only flop day of the LA portion in Pasadena, it took 1.5 hours to get to, and then absolutely nothing to see. Other than that, we are just relaxing among the crystals. Recharging before moving onto Santa Monica, hopefully where I get my first swim!!!
         </p>
+        <p><small>p.s. I'd like to add I have in fact spotted a celeb. Mae Martin was outside a bar wearing a huge Dodgers cap. And Dylan spotted Tunde Adebimpe walking down the street. I'll let you decide which one was more impressive. </small></p>
             <p className='date-posted'>Posted on Sunday 21.04.24</p>
             </div>
             <div className='gallery'>

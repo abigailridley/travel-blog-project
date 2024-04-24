@@ -79,7 +79,6 @@ const Blogs = () => {
                         </div>
                     </button>
                 </Link> 
-                
             
             
             </div>

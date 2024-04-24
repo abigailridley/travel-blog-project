@@ -16,6 +16,8 @@ import MontereyBlog from './components/blogs/monterey-blog.js';
 import CulverCityBlog from './components/blogs/culvercity.js'
 
 
+import MexicoPlanning from './components/mexico-planning/index.js';
+
 function App() {
   
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path = "/blogs" element={<Blogs/>}/>
           <Route path = "/map" element={<Maps/>}/>
           <Route path = "/about" element={<About/>}/>
+
+          <Route path = "/mexico-planning" element={MexicoPlanning}/>
         </Routes>
 
       <Footer />

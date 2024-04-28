@@ -21,7 +21,7 @@ const images = [
     { src: require('./img/california/culvercity/img17.jpeg'), alt: 'Image 17' }
   ];
 
-const MontereyBlog = () => {
+const CulverCity = () => {
     return ( 
         <div className="container blog-post">
             <h1>Los Angeles, California</h1>
@@ -52,4 +52,4 @@ const MontereyBlog = () => {
     )
 }
 
-export default MontereyBlog
+export default CulverCity

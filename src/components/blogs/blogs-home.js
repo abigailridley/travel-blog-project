@@ -15,7 +15,7 @@ const Blogs = () => {
            <h1 className='title'>Blogs</h1>
             <div className='container'>
             <div className='main-map'> <MainMap /></div>
-            <Link to='/blogs/monterey' className='blog-link'>
+            <Link to='/blogs/culvercity' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>Los Angeles, CA</h5>
                         <img src={culvercity} alt='img' className='blog-img'/>

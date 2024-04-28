@@ -7,7 +7,7 @@ import culvercity from './img/culvercity.jpeg'
 const LatestBlog = () => {
     return (
         <div className='latest-blog'>
-           <Link to='/blogs/losangeles' >
+           <Link to='/blogs/CulverCity' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
                 <img src={culvercity} alt='img' className='latest-blog-img'/>

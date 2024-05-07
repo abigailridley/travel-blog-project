@@ -5,8 +5,8 @@ import React from 'react';
 
 
 const mapContainerStyle = {
-  width: '300px', 
-  height: '300px', 
+  width: '275px', 
+  height: '275px', 
   borderRadius: '10px', 
 };
 

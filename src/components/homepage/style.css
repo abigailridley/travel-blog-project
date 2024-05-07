@@ -39,7 +39,9 @@
     grid-template-columns: 1fr; 
     gap: 40px;
     min-width: 80%;
+    font-size: 12px;
   }
+
 }
 
 

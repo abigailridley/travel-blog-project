@@ -19,10 +19,9 @@ const images = [
     { src: require('./img/california/santamonica/img15.jpeg'), alt: 'Image 15' },
     { src: require('./img/california/santamonica/img16.jpeg'), alt: 'Image 16' },
     { src: require('./img/california/santamonica/img17.jpeg'), alt: 'Image 17' },
-    { src: require('./img/california/santamonica/img14.jpeg'), alt: 'Image 18' },
-    { src: require('./img/california/santamonica/img15.jpeg'), alt: 'Image 19' },
-    { src: require('./img/california/santamonica/img16.jpeg'), alt: 'Image 20' },
-    { src: require('./img/california/santamonica/img17.jpeg'), alt: 'Image 21' }
+    { src: require('./img/california/santamonica/img18.jpeg'), alt: 'Image 18' },
+    { src: require('./img/california/santamonica/img20.jpeg'), alt: 'Image 20' },
+    { src: require('./img/california/santamonica/img21.jpeg'), alt: 'Image 21' }
   ];
 
 const SantaMonica = () => {

@@ -3,8 +3,8 @@
   background-image: url("/src/img/cactus-img.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 100vh; /* Use vh (viewport height) instead of px for full-page background */
-  margin: 0; /* Remove default margin */
+  min-height: 100vh; 
+  margin: 0; 
   padding: 10px 0 30px 0;
   background-attachment: fixed;
   min-width: 320px !important;
@@ -30,8 +30,7 @@
 }
 
 .navbar {
-  width: 100%; /* Make navbar span full width */
-  /* Add any additional styles for the navbar */
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {

@@ -48,16 +48,16 @@
   cursor: pointer;
 }
 
-.controls {
+/* .controls {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between; /* Add space between the buttons */
+
   align-items: center;
-}
+} */
 
 .control-button:hover {
   background-color: rgba(0, 0, 0, 0.124);
@@ -65,7 +65,7 @@
 
 /* Enlarged image */
 .gallery-image {
-  max-width: 75%;
+  max-width: 50%;
   transition: transform 0.3s ease; /* Add transition for smooth enlargement */
 }
 

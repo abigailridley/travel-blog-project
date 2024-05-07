@@ -7,6 +7,7 @@ import sanfran from "../homepage/img/sanfran.jpeg"
 import sanfranp2 from "../homepage/img/sanfranp2.jpeg"
 import monterey from '../homepage/img/monterey.jpeg'
 import culvercity from '../homepage/img/culvercity.jpeg'
+import SantaMonica from './santamonica';
 import MainMap from '../maps/main-map';
 
 const Blogs = () => {
@@ -15,6 +16,15 @@ const Blogs = () => {
            <h1 className='title'>Blogs</h1>
             <div className='container'>
             <div className='main-map'> <MainMap /></div>
+            <Link to='/blogs/santamonica' className='blog-link'>
+                    <button type='button' className='blog-button'> 
+                    <h5>Santa Monica, CA</h5>
+                        <img src={SantaMonica} alt='img' className='blog-img'/>
+                        <div className='location'>
+                            <p>21.04.24 - 06.04.24</p>
+                        </div>
+                    </button>
+                </Link> 
             <Link to='/blogs/culvercity' className='blog-link'>
                     <button type='button' className='blog-button'> 
                     <h5>Los Angeles, CA</h5>

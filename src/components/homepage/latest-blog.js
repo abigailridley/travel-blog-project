@@ -1,7 +1,7 @@
 import './latest-blog.css';
 import { Link } from 'react-router-dom';
 
-import culvercity from './img/culvercity.jpeg'
+import santamonica from './img/santamonica.jpeg'
 
 
 const LatestBlog = () => {
@@ -10,7 +10,7 @@ const LatestBlog = () => {
            <Link to='/blogs/santamonica' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
-                <img src={culvercity} alt='img' className='latest-blog-img'/>
+                <img src={santamonica} alt='img' className='latest-blog-img'/>
                 <h4>Santa Monica, CA</h4>
                 <div className='date'>
                 <p>11.04.24 - 21.04.24</p>

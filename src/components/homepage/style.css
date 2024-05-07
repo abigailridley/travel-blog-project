@@ -1,15 +1,14 @@
-
 .homepage-container {
   position: relative;
   background-image: url("/src/img/cactus-img.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 80vh;
-  margin: 0 auto;
+  min-height: 100vh; /* Use vh (viewport height) instead of px for full-page background */
+  margin: 0; /* Remove default margin */
   padding: 10px 0 30px 0;
   background-attachment: fixed;
+  min-width: 320px !important;
 }
-
 .homepage-hero {
   text-align: center;
   padding-top: 20px;
@@ -18,22 +17,29 @@
   font-family: "Shrikhand", serif;
   font-weight: 400;
   font-style: normal;
+  min-width: 370px !important;
 }
-
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap: 10px;
+  gap: 20px;
   justify-items: center; 
   align-items: center;
+  padding: 10px;
 }
 
+.navbar {
+  width: 100%; /* Make navbar span full width */
+  /* Add any additional styles for the navbar */
+}
 
 @media screen and (max-width: 700px) {
   .container {
     grid-template-columns: 1fr; 
-    gap: 40px
+    gap: 40px;
+    min-width: 80%;
   }
 }
+
 

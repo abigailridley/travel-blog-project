@@ -11,11 +11,9 @@ const mapContainerStyle = {
 };
 
 const center = {
-  // lat:   42.41077096333509,
-  // lng:   -123.44478414481655
-  lat: 42.857164919166394, 
-  lng: -118.05956862267394
-};
+  lat: 40.5685952, 
+  lng:  -118.4863963
+  };
 
 const portland = {
   lat:  45.512359076694025,
@@ -45,6 +43,11 @@ const monterey = {
 const losangeles = {
   lat: 34.018795251541015,
   lng:  -118.49261637166784 
+};
+
+const sandiego = {
+  lat: 32.7242918,
+  lng:  -117.1683419
 };
 
 
@@ -80,6 +83,7 @@ function MainMap () {
           <Marker position={sanfran} />
           <Marker position={monterey} />
           <Marker position={losangeles} />
+          <Marker position={sandiego} />
         </GoogleMap>
       </div>
       

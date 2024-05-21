@@ -11,8 +11,9 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: 40.5685952, 
-  lng:  -118.4863963
+  lat: 24.5191560386197,
+  lng:    -104.68497136807875
+ 
   };
 
 const portland = {
@@ -50,6 +51,22 @@ const sandiego = {
   lng:  -117.1683419
 };
 
+const culiacan = {
+  lat: 24.808279796028675,
+  lng:  -107.38657342271911
+};
+
+const mazatlan = {
+  lat:  23.24354939092022,
+  lng: -106.44842395559984
+};
+
+const sanpancho = {
+  lat: 20.9030185,
+  lng:  -105.4156573
+};
+
+
 
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -72,7 +89,7 @@ function MainMap () {
       <h2 className="main-map-title">Where we've been</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={4}
+          zoom={5}
           center={center}
           onLoad={onLoad}
         onUnmount={onUnmount}
@@ -84,6 +101,9 @@ function MainMap () {
           <Marker position={monterey} />
           <Marker position={losangeles} />
           <Marker position={sandiego} />
+          <Marker position={culiacan} />
+          <Marker position={mazatlan} />
+          <Marker position={sanpancho} />
         </GoogleMap>
       </div>
       

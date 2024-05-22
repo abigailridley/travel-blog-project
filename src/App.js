@@ -7,6 +7,9 @@ import Blogs from './components/blogs/blogs-home.js';
 import Maps from './components/maps/maps.js';
 import About from './components/about/index.js';
 import Footer from './components/footer/footer.js';
+import CreateBlog from './components/blogs/create-blog.js';
+
+// Blogs
 import SeattleBlog from './components/blogs/seattle-blog'; 
 import PortlandBlog from './components/blogs/portland-blog.js';
 import OaklandSFBlog from './components/blogs/oakland-sf-blog.js';
@@ -37,6 +40,7 @@ function App() {
           <Route path = "/blogs" element={<Blogs/>}/>
           <Route path = "/map" element={<Maps/>}/>
           <Route path = "/about" element={<About/>}/>
+          <Route path="/create-blog" element={<CreateBlog/>} />
         </Routes>
 
       <Footer />

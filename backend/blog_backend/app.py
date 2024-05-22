@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timezone
 from flask_migrate import Migrate
+from flask_cors import CORS
 from forms import BlogPostForm
 
 
 
 app = Flask(__name__)
+CORS(app)
 app.config['SECRET_KEY'] = '\x96\xfb\xdb\xe1\xf4\x91\xc0\xd0\x90\x01\xae\xa8'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
 app.config['SQLACLHEMY_TRACK_MODIFICATIONS'] = False
@@ -16,7 +18,7 @@ migrate = Migrate(app, db)
 
 class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title =db.Column(db.String(100), nullable=False)
+    title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.Text, nullable=False)
     date = db.Column(db.DateTime, nullable=False, default=datetime.now(timezone.utc))
 

@@ -29,7 +29,7 @@ const SantaMonica = () => {
         <div className="container blog-post">
             <h1>Santa Monica, California</h1>
             <div className='date'>
-            <p>21.4.24 - 06.04.24</p>
+            <p>21.4.24 - 06.05.24</p>
             </div>
             <div className='blog-container'>
          
@@ -49,7 +49,7 @@ const SantaMonica = () => {
            An enjoyable couple of weeks. And relatively meltdown free. Which will all change while we slowly descend into Mexico. So glad we’ve had these couple of months to ease into the travelling before entering the chaos of Mexico, panicking and trying to remember how to speak Spanish. We are also determined not to use too many flights so a few long bus rides are in order. Next is a short stay in San Diego then crossing the border and facing my year abroad trauma once and for all. 
            </p>
        
-            <p className='date-posted'>Posted on Monday 06.04.24</p>
+            <p className='date-posted'>Posted on Monday 06.05.24</p>
             </div>
             <div className='gallery'>
 <Gallery images={images}/>

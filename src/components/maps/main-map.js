@@ -66,6 +66,11 @@ const sanpancho = {
   lng:  -105.4156573
 };
 
+const guadalajara = {
+  lat: 20.672975927669984, 
+  lng: -103.35904804752992
+}
+
 
 
 function MainMap () {
@@ -104,6 +109,7 @@ function MainMap () {
           <Marker position={culiacan} />
           <Marker position={mazatlan} />
           <Marker position={sanpancho} />
+          <Marker position={guadalajara} />
         </GoogleMap>
       </div>
       

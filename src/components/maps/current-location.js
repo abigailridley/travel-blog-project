@@ -10,10 +10,10 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const sanpancho = {
-  lat: 20.9030185,
-  lng:  -105.4156573
-};
+const guadalajara = {
+  lat: 20.672975927669984, 
+  lng: -103.35904804752992
+}
 
 function CurrentLocationMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -23,7 +23,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(sanpancho);
+    const bounds = new window.google.maps.LatLngBounds(guadalajara);
     return (bounds)
   }, [])
 
@@ -37,11 +37,11 @@ function CurrentLocationMap () {
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={9}
-          center={sanpancho}
+          center={guadalajara}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={sanpancho} />
+          <Marker position={guadalajara} />
         
         </GoogleMap>
       </div>

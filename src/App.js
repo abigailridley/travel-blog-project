@@ -15,6 +15,7 @@ import SanFranBlogP2 from './components/blogs/sanfran-blog-p2.js';
 import MontereyBlog from './components/blogs/monterey-blog.js';
 import CulverCityBlog from './components/blogs/culvercity.js';
 import SantaMonicaBlog from './components/blogs/santamonica.js'
+import SanDiegoSanPancho from './components/blogs/sandiego-sanpancho.js';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path ="/blogs/monterey" element={<MontereyBlog/>}/>
           <Route path ="/blogs/culvercity" element={<CulverCityBlog/>}/>
           <Route path ="/blogs/santamonica" element={<SantaMonicaBlog/>}/>
+          <Route path ="/blogs/sandiego-sanpancho" element={<SanDiegoSanPancho/>}/>
           <Route path = "/blogs" element={<Blogs/>}/>
           <Route path = "/map" element={<Maps/>}/>
           <Route path = "/about" element={<About/>}/>

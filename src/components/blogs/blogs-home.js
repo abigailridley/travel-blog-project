@@ -9,7 +9,6 @@ import monterey from '../homepage/img/monterey.jpeg';
 import culvercity from '../homepage/img/culvercity.jpeg';
 import santamonica from '../homepage/img/santamonica.jpeg';
 import sanpancho from '../homepage/img/sanpancho.jpeg'
-import MainMap from '../maps/main-map';
 
 const blogData = [
     { to: '/blogs/sandiego-sanpancho', title: 'San Pancho, Mexico', img: sanpancho, date: '23 May 24' },
@@ -40,7 +39,6 @@ const Blogs = () => {
         <div className='blogs-page'>
             <h1 className='title'>Blogs</h1>
             <div className='container'>
-                <div className='main-map'> <MainMap /></div>
                 {blogData.map((blog, index) => (
                     <BlogLink key={index} {...blog} />
                 ))}

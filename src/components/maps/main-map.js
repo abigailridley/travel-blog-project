@@ -1,18 +1,19 @@
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import React from 'react';
-// import './current-location.css';
+import styled from 'styled-components';
+
 
 
 
 const mapContainerStyle = {
-  width: '290px', 
-  height: '290px', 
+  width: '500px', 
+  height: '500px', 
   borderRadius: '10px', 
 };
 
 const center = {
-  lat: 24.5191560386197,
-  lng:    -104.68497136807875
+ lat: 41.18712773588114, 
+ lng: -107.75307365840668
  
   };
 
@@ -70,6 +71,10 @@ const guadalajara = {
   lat: 20.672975927669984, 
   lng: -103.35904804752992
 }
+const sanmiguel = {
+  lat: 20.914434736925376, 
+  lng:-100.74550833655884
+}
 
 
 
@@ -88,13 +93,13 @@ function MainMap () {
   const onUnmount = React.useCallback(function callback(){}, [])
 
   return isLoaded ? (
-    <div className="main-map-container">
+    
+  <Container>
       
-      <div>
-      <h2 className="main-map-title">Where we've been</h2>
+    <Title>Where we've been</Title>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={5}
+          zoom={3.5}
           center={center}
           onLoad={onLoad}
         onUnmount={onUnmount}
@@ -110,10 +115,11 @@ function MainMap () {
           <Marker position={mazatlan} />
           <Marker position={sanpancho} />
           <Marker position={guadalajara} />
+          <Marker position={sanmiguel} />
         </GoogleMap>
-      </div>
+    </Container>
       
-    </div>
+    
   ) : loadError ? (
     <div>Error loading maps</div>
     ) : (
@@ -126,3 +132,19 @@ export default React.memo(MainMap)
 
 
 
+const Title = styled.div`
+font-family: "Shrikhand", serif;
+text-align: center;
+font-size: 30px;
+margin-top: 10px;
+color: #006642;
+`
+const Container = styled.div`
+background-color: #effded;
+
+border-radius: 10px;
+display: grid;
+
+justify-items: center; 
+padding: 10px;
+`

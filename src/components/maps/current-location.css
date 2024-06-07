@@ -1,10 +1,3 @@
-.map-title {
-    font-family: "Shrikhand", serif;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 10px;
-    color: #006642;
-}
 
 .map-container {
     background-color: #effded;
@@ -12,5 +5,12 @@
     border-radius: 10px;
 }
 
+.map-title {
+    font-family: "Shrikhand", serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #006642;
+}
 
 

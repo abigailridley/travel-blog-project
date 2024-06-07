@@ -23,7 +23,7 @@ const images = [
     { src: require('./img/mexico/sandiego-sanpancho/img19.jpeg'), alt: 'Image 19' }
   ];
 
-const SanDiegoSanPancho = () => {
+const SanPancho = () => {
     return ( 
         <div className="container blog-post">
             <h1>San Diego, CA ➡️ San Pancho, Mexico</h1>
@@ -57,4 +57,4 @@ const SanDiegoSanPancho = () => {
     )
 }
 
-export default SanDiegoSanPancho
+export default SanPancho

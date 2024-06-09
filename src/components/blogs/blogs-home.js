@@ -9,9 +9,12 @@ import monterey from '../homepage/img/monterey.jpeg';
 import culvercity from '../homepage/img/culvercity.jpeg';
 import santamonica from '../homepage/img/santamonica.jpeg';
 import sanpancho from '../homepage/img/sanpancho.jpeg'
+import gdl from '../homepage/img/gdl.jpeg'
+
 
 const blogData = [
-    { to: '/blogs/sandiego-sanpancho', title: 'San Pancho, Mexico', img: sanpancho, date: '23 May 24' },
+    { to: '/blogs/guadalajara', title: 'Guadalajara, Mexico', img: gdl, date: '30 May 24' },
+    { to: '/blogs/sanpancho', title: 'San Pancho, Mexico', img: sanpancho, date: '23 May 24' },
     { to: '/blogs/santamonica', title: 'Santa Monica, CA', img: santamonica, date: '06 May 24' },
     { to: '/blogs/culvercity', title: 'Los Angeles, CA', img: culvercity, date: '21 April 24' },
     { to: '/blogs/monterey', title: 'Monterey, CA', img: monterey, date: '11 April 24' },

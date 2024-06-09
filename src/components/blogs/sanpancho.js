@@ -47,7 +47,7 @@ const SanPancho = () => {
         Currently on our way to Guadalajara, where I spent my year abroad. So I’m sure the nostalgia will be flowing. Can’t believe we’ve been gone for nearly 100 days. I am homesick for the first time in my life and I keep daydreaming about Brighton seaside can you believe 🌊
         </p>
        
-            <p className='date-posted'>Posted on Thursday 23.04.24</p>
+            <p className='date-posted'>Posted on Thursday 23.05.24</p>
             </div>
             <div className='gallery'>
 <Gallery images={images}/>

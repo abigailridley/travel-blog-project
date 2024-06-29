@@ -75,6 +75,10 @@ const sanmiguel = {
   lat: 20.914434736925376, 
   lng:-100.74550833655884
 }
+const cdmx = {
+  lat: 19.419604630135037, 
+  lng: -99.18634925800836
+ }
 
 
 
@@ -116,6 +120,8 @@ function MainMap () {
           <Marker position={sanpancho} />
           <Marker position={guadalajara} />
           <Marker position={sanmiguel} />
+          <Marker position={cdmx} />
+          
         </GoogleMap>
     </Container>
       

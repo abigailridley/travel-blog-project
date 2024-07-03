@@ -10,9 +10,9 @@ const mapContainerStyle = {
   borderRadius: '10px', 
 };
 
-const cdmx = {
- lat: 19.419604630135037, 
- lng: -99.18634925800836
+const costarica = {
+  lat: 10.538145585009858, 
+  lng: -83.50428819013266
 }
 
 
@@ -25,7 +25,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(cdmx);
+    const bounds = new window.google.maps.LatLngBounds(costarica);
     return (bounds)
   }, [])
 
@@ -38,12 +38,12 @@ function CurrentLocationMap () {
       <h2 className="map-title">Current Location</h2>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={9}
-          center={cdmx}
+          zoom={7}
+          center={costarica}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={cdmx} />
+          <Marker position={costarica} />
         
         </GoogleMap>
       </div>

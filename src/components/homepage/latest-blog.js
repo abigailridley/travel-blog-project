@@ -1,19 +1,19 @@
 import './latest-blog.css';
 import { Link } from 'react-router-dom';
 
-import gdl from './img/gdl.jpeg'
+import cdmx from './img/cdmx.jpeg'
 
 
 const LatestBlog = () => {
     return (
         <div className='latest-blog'>
-           <Link to='/blogs/guadalajara' >
+           <Link to='/blogs/mexicocity' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
-                <img src={gdl} alt='img' className='latest-blog-img'/>
-                <h4>Guadalajara, Mexico</h4>
+                <img src={cdmx} alt='img' className='latest-blog-img'/>
+                <h4>Mexico City, Mexico</h4>
                 <div className='date'>
-                <p>30 May 2024</p>
+                <p>9 June 24</p>
                 </div>
             </button>
             </Link> 

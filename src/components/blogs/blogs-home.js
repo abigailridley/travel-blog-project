@@ -12,10 +12,12 @@ import sanpancho from '../homepage/img/sanpancho.jpeg'
 import gdl from '../homepage/img/gdl.jpeg'
 import sma from '../homepage/img/sma.jpeg'
 import cdmx from '../homepage/img/cdmx.jpeg'
+import costarica from '../homepage/img/costarica.jpeg'
 
 
 
 const blogData = [
+    { to: '/blogs/costarica', title: 'Tortuguero, Costa Rica', img: costarica, date: '01 July 24'},
     { to: '/blogs/mexicocity', title: 'Mexico City, Mexico', img: cdmx, date: '09 June 24'},
     { to: '/blogs/sanmigueldeallende', title: 'San Miguel, Mexico', img: sma, date: '30 May 24'},
     { to: '/blogs/guadalajara', title: 'Guadalajara, Mexico', img: gdl, date: '23 May 24' },

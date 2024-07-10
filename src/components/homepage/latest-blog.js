@@ -1,19 +1,20 @@
 import './latest-blog.css';
 import { Link } from 'react-router-dom';
 
-import cdmx from './img/cdmx.jpeg'
+
+import costarica from './img/costarica.jpeg'
 
 
 const LatestBlog = () => {
     return (
         <div className='latest-blog'>
-           <Link to='/blogs/mexicocity' >
+           <Link to='/blogs/costarica' >
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
-                <img src={cdmx} alt='img' className='latest-blog-img'/>
-                <h4>Mexico City, Mexico</h4>
+                <img src={costarica} alt='img' className='latest-blog-img'/>
+                <h4>Tortuguero, Costa </h4>
                 <div className='date'>
-                <p>9 June 24</p>
+                <p>1 July 24</p>
                 </div>
             </button>
             </Link> 

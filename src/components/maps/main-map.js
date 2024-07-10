@@ -12,8 +12,8 @@ const mapContainerStyle = {
 };
 
 const center = {
- lat: 41.18712773588114, 
- lng: -107.75307365840668
+ lat: 29.974228592019237, 
+ lng: -94.38083375894192
  
   };
 
@@ -80,6 +80,16 @@ const cdmx = {
   lng: -99.18634925800836
  }
 
+ const costarica = {
+  lat: 10.538145585009858, 
+  lng: -83.50428819013266
+}
+
+ const bogota = {
+  lat: 4.719735651249472, 
+  lng: -74.07374473771112
+ }
+
 
 
 function MainMap () {
@@ -121,6 +131,8 @@ function MainMap () {
           <Marker position={guadalajara} />
           <Marker position={sanmiguel} />
           <Marker position={cdmx} />
+          <Marker position={costarica} />
+          <Marker position={bogota} />
           
         </GoogleMap>
     </Container>

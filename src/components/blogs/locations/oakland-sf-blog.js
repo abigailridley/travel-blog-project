@@ -1,26 +1,5 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/oaklandsf/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/oaklandsf/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/oaklandsf/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/california/oaklandsf/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/oaklandsf/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/oaklandsf/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/oaklandsf/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/oaklandsf/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/oaklandsf/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/oaklandsf/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/oaklandsf/img11.jpg'), alt: 'Image 11' },
-    { src: require('./img/california/oaklandsf/img12.jpg'), alt: 'Image 12' },
-    { src: require('./img/california/oaklandsf/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/california/oaklandsf/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/california/oaklandsf/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/california/oaklandsf/img16.jpg'), alt: 'Image 16' },
-    { src: require('./img/california/oaklandsf/img17.jpeg'), alt: 'Image 17' }
-  ];
-
+import '../blog-post.css'
 const OaklandSFBlog = () => {
     return ( 
         <div className="container blog-post">
@@ -46,10 +25,7 @@ const OaklandSFBlog = () => {
            
             <p className='date-posted'>Posted on Monday 25.03.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+    
         </div>
     )
 }

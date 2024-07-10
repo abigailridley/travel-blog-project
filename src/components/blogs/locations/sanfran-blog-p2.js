@@ -1,25 +1,6 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/sanfranp2/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/sanfranp2/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/sanfranp2/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/california/sanfranp2/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/sanfranp2/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/sanfranp2/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/sanfranp2/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/sanfranp2/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/sanfranp2/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/sanfranp2/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/sanfranp2/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/california/sanfranp2/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/california/sanfranp2/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/california/sanfranp2/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/california/sanfranp2/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/california/sanfranp2/img16.jpeg'), alt: 'Image 16' },
-    { src: require('./img/california/sanfranp2/img17.jpeg'), alt: 'Image 17' }
-  ];
+import '../blog-post.css'
+
 
 const SanFranBlogP2 = () => {
     return ( 
@@ -42,10 +23,7 @@ const SanFranBlogP2 = () => {
             </p>
             <p className='date-posted'>Posted on Sunday 07.04.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+        
         </div>
         
     )

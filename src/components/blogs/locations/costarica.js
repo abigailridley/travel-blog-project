@@ -1,30 +1,5 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/costarica/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/costarica/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/costarica/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/costarica/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/costarica/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/costarica/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/costarica/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/costarica/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/costarica/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/costarica/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/costarica/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/costarica/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/costarica/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/costarica/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/costarica/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/costarica/img16.jpeg'), alt: 'Image 16' },
-    { src: require('./img/costarica/img17.jpeg'), alt: 'Image 17' },
-    { src: require('./img/costarica/img18.jpeg'), alt: 'Image 18' },
-    { src: require('./img/costarica/img19.jpeg'), alt: 'Image 19' }
-
-
-
-  ];
+import '../blog-post.css'
 
 const CostaRica = () => {
     return ( 
@@ -49,10 +24,6 @@ The next day we headed back to the national park for a guided daytime hike. I ha
 There’s so much more I could have included, Costa Rica was just such an exciting and unique place. They have a saying “Pura Vida” / “Pure Life” which they use in a response to everything. I bought my first and only souvenir bc I am obsessed. I am finishing this off in the airport waiting for our flight to Bogota, where I’ll be reunited with another friend from my year abroad that I haven’t seen in 8 years. We’re also planning our final couple of months before our return to the UK!!!
 </p>
             <p className='date-posted'>Posted on 09.07.24</p>
-            </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
             </div>
         </div>
     )

@@ -17,25 +17,26 @@ import costarica from '../homepage/img/costarica.jpeg'
 
 
 const blogData = [
-    { to: '/blogs/costarica', title: 'Tortuguero, Costa Rica', img: costarica, date: '01 July 24'},
-    { to: '/blogs/mexicocity', title: 'Mexico City, Mexico', img: cdmx, date: '09 June 24'},
-    { to: '/blogs/sanmigueldeallende', title: 'San Miguel, Mexico', img: sma, date: '30 May 24'},
-    { to: '/blogs/guadalajara', title: 'Guadalajara, Mexico', img: gdl, date: '23 May 24' },
-    { to: '/blogs/sanpancho', title: 'San Pancho, Mexico', img: sanpancho, date: '06 May 24' },
-    { to: '/blogs/santamonica', title: 'Santa Monica, CA', img: santamonica, date: '21 April 24' },
-    { to: '/blogs/culvercity', title: 'Los Angeles, CA', img: culvercity, date: '11 April 24' },
-    { to: '/blogs/monterey', title: 'Monterey, CA', img: monterey, date: '6 April 24' },
-    { to: '/blogs/sanfran-p2', title: 'San Francisco, CA', img: sanfranp2, date: '31 March 24' },
-    { to: '/blogs/sanfran', title: 'San Francisco, CA', img: sanfran, date: '23 March 24' },
-    { to: '/blogs/oakland-sf', title: 'San Francisco, CA', img: oaksf, date: '15 March 24' },
-    { to: '/blogs/portland', title: 'Portland, OR', img: portland, date: '25 February 24' },
-    { to: '/blogs/seattle', title: 'Seattle, WA', img: seattle, date: '17 February 24' }
+    { to: '/blogs/costarica', place: 'Tortuguero', country:'Costa Rica', img: costarica, date: '01 July 24'},
+    { to: '/blogs/mexicocity', place: 'Mexico City', country:'Mexico', img: cdmx, date: '09 June 24'},
+    { to: '/blogs/sanmigueldeallende', place: 'San Miguel de Allende', country:'Mexico', img: sma, date: '30 May 24'},
+    { to: '/blogs/guadalajara', place: 'Guadalajara', country:'Mexico', img: gdl, date: '23 May 24' },
+    { to: '/blogs/sanpancho', place: 'San Pancho', country:'Mexico', img: sanpancho, date: '06 May 24' },
+    { to: '/blogs/santamonica', place: 'Santa Monica, CA', country:'USA', img: santamonica, date: '21 April 24' },
+    { to: '/blogs/culvercity', place: 'Los Angeles, CA', country:'USA', img: culvercity, date: '11 April 24' },
+    { to: '/blogs/monterey', place: 'Monterey, CA', country:'USA', img: monterey, date: '6 April 24' },
+    { to: '/blogs/sanfran-p2', place: 'San Francisco, CA', country:'USA', img: sanfranp2, date: '31 March 24' },
+    { to: '/blogs/sanfran', place: 'San Francisco, CA', country:'USA', img: sanfran, date: '23 March 24' },
+    { to: '/blogs/oakland-sf', place: 'San Francisco, CA', country:'USA', img: oaksf, date: '15 March 24' },
+    { to: '/blogs/portland', place: 'Portland, OR', country:'USA', img: portland, date: '25 February 24' },
+    { to: '/blogs/seattle', place: 'Seattle, WA', country:'USA', img: seattle, date: '17 February 24' }
 ];
 
-const BlogLink = ({ to, title, img, date }) => (
+const BlogLink = ({ to, place, country, img, date }) => (
     <Link to={to} className='blog-link'>
         <button type='button' className='blog-button'>
-            <h5 className='place'>{title}</h5>
+            <h5 className='place'><div>{place}</div>
+            <div>{country}</div></h5>
             <img src={img} alt='img' className='blog-img' />
             <div className='location'>
                 <p>{date}</p>

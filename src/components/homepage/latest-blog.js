@@ -12,7 +12,7 @@ const LatestBlog = () => {
             <button type='button' className='latest-blog-button'>
             <h3>Latest Blog</h3>
                 <img src={costarica} alt='img' className='latest-blog-img'/>
-                <h4>Tortuguero, Costa </h4>
+                <h4>Tortuguero, <br/>Costa Rica</h4>
                 <div className='date'>
                 <p>1 July 24</p>
                 </div>

@@ -1,25 +1,5 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/culvercity/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/culvercity/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/culvercity/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/california/culvercity/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/culvercity/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/culvercity/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/culvercity/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/culvercity/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/culvercity/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/culvercity/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/culvercity/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/california/culvercity/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/california/culvercity/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/california/culvercity/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/california/culvercity/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/california/culvercity/img16.jpeg'), alt: 'Image 16' },
-    { src: require('./img/california/culvercity/img17.jpeg'), alt: 'Image 17' }
-  ];
+import '../blog-post.css'
 
 const CulverCity = () => {
     return ( 
@@ -44,10 +24,7 @@ const CulverCity = () => {
         <p><small>p.s. I'd like to add I have in fact spotted a celeb. Mae Martin was outside a bar wearing a huge Dodgers cap. And Dylan spotted Tunde Adebimpe walking down the street. I'll let you decide which one was more impressive. </small></p>
             <p className='date-posted'>Posted on Sunday 21.04.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+           
         </div>
     )
 }

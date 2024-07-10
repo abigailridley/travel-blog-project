@@ -21,79 +21,55 @@
     padding: 20px 0 0 0;
 }
 
-.main-map-title {
-    font-size: 26px;
-    padding-top: 10px;
-    color: #006642;
+.blogs-page .blog-preview {
+    width: 300px; /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-.main-map-container {
-    background-color: #effded;
-    padding: 0px 15px 15px 15px;
-    border-radius: 10px;
+.blogs-page .blog-preview:hover {
+    transform: translateY(-5px);
 }
 
-.blog-link {
+.blogs-page .blog-link {
     text-decoration: none;
+    color: inherit;
 }
 
-.blog-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px; /* Fixed width */
-    background-color: #effded;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px 5px 20px;
-    color: #2d4c74;
+.blogs-page .blog-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
 }
 
-.blogs-page .blog-button:hover {
-    background-color: #def8db;
+.blogs-page .blog-info {
+    padding: 20px;
 }
 
-.blogs-page .blog-img {
-    max-width: 200px;
-    border-radius: 4px;
+.blogs-page h3 {
+    margin: 0;
 }
 
-.place {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    white-space: normal; /* Allows text to wrap */
-    width: 100%; /* Ensure it takes the full width */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-    text-align: center; /* Center the text */
+.blogs-page .blog-info div {
+    margin-bottom: 5px;
 }
 
-.location p {
-    margin: 8px 0 0 0;
-    font-family: "Aleo", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+.blogs-page .blog-info p {
+    margin-top: 5px;
+    color: #888;
 }
 
 @media screen and (max-width: 700px) {
-    .blogs-page {
-        padding-bottom: 20px;
-    }
-    .container {
-        flex-direction: column; 
+    .blogs-page .container {
+        flex-direction: column;
         align-items: center;
-        margin: 30px 0 20px 0;
+        margin-top: 30px;
     }
-    .main-map {
-        flex-direction: column; 
-        align-items: center;
-        margin: 40px 0 30px 0;
+    
+    .blogs-page .blog-preview {
+        width: 100%; /* Adjust width for responsiveness */
     }
-    .blogs-page {
-        height: 100%;
-    } 
 }

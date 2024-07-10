@@ -1,25 +1,5 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/mexico/guadalajara/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/mexico/guadalajara/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/mexico/guadalajara/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/mexico/guadalajara/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/mexico/guadalajara/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/mexico/guadalajara/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/mexico/guadalajara/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/mexico/guadalajara/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/mexico/guadalajara/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/mexico/guadalajara/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/mexico/guadalajara/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/mexico/guadalajara/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/mexico/guadalajara/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/mexico/guadalajara/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/mexico/guadalajara/img15.jpeg'), alt: 'Image 15' },
-
-
-  ];
+import '../blog-post.css'
 
 const Guadalajara = () => {
     return ( 
@@ -46,10 +26,7 @@ This week left me WEAK so perfect timing for both of us to get ill. Luckily we h
 </p>
             <p className='date-posted'>Posted on Sunday 09.06.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+        
         </div>
     )
 }

@@ -1,24 +1,6 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/monterey/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/monterey/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/monterey/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/california/monterey/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/monterey/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/monterey/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/monterey/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/monterey/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/monterey/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/monterey/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/monterey/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/california/monterey/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/california/monterey/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/california/monterey/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/california/monterey/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/california/monterey/img16.jpeg'), alt: 'Image 16' }
-  ];
+import '../blog-post.css'
+
 
 const MontereyBlog = () => {
     return ( 
@@ -46,10 +28,7 @@ const MontereyBlog = () => {
            
             <p className='date-posted'>Posted on Thursday 11.04.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+            
         </div>
     )
 }

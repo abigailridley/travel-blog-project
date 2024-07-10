@@ -1,28 +1,6 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/santamonica/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/santamonica/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/santamonica/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/california/santamonica/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/santamonica/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/santamonica/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/santamonica/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/santamonica/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/santamonica/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/santamonica/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/santamonica/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/california/santamonica/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/california/santamonica/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/california/santamonica/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/california/santamonica/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/california/santamonica/img16.jpeg'), alt: 'Image 16' },
-    { src: require('./img/california/santamonica/img17.jpeg'), alt: 'Image 17' },
-    { src: require('./img/california/santamonica/img18.jpeg'), alt: 'Image 18' },
-    { src: require('./img/california/santamonica/img20.jpeg'), alt: 'Image 20' },
-    { src: require('./img/california/santamonica/img21.jpeg'), alt: 'Image 21' }
-  ];
+import '../blog-post.css'
+
 
 const SantaMonica = () => {
     return ( 
@@ -51,10 +29,7 @@ const SantaMonica = () => {
        
             <p className='date-posted'>Posted on Monday 06.05.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+           
         </div>
     )
 }

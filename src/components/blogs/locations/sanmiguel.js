@@ -1,24 +1,6 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/mexico/sanmiguel/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/mexico/sanmiguel/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/mexico/sanmiguel/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/mexico/sanmiguel/img4.jpg'), alt: 'Image 4' },
-    { src: require('./img/mexico/sanmiguel/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/mexico/sanmiguel/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/mexico/sanmiguel/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/mexico/sanmiguel/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/mexico/sanmiguel/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/mexico/sanmiguel/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/mexico/sanmiguel/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/mexico/sanmiguel/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/mexico/sanmiguel/img13.jpeg'), alt: 'Image 13' }
+import '../blog-post.css'
 
-
-
-  ];
 
 const SanMiguel = () => {
     return ( 
@@ -52,10 +34,7 @@ It was kind of an uneventful 12 days, it felt good to relax and do very little. 
 
             <p className='date-posted'>Posted on 03.08.24</p>
             </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
-            </div>
+            
         </div>
     )
 }

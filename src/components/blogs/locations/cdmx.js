@@ -1,32 +1,5 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/mexico/mexicocity/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/mexico/mexicocity/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/mexico/mexicocity/img3.jpeg'), alt: 'Image 3' },
-    { src: require('./img/mexico/mexicocity/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/mexico/mexicocity/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/mexico/mexicocity/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/mexico/mexicocity/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/mexico/mexicocity/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/mexico/mexicocity/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/mexico/mexicocity/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/mexico/mexicocity/img11.jpeg'), alt: 'Image 11' },
-    { src: require('./img/mexico/mexicocity/img12.jpeg'), alt: 'Image 12' },
-    { src: require('./img/mexico/mexicocity/img13.jpeg'), alt: 'Image 13' },
-    { src: require('./img/mexico/mexicocity/img14.jpeg'), alt: 'Image 14' },
-    { src: require('./img/mexico/mexicocity/img15.jpeg'), alt: 'Image 15' },
-    { src: require('./img/mexico/mexicocity/img16.jpeg'), alt: 'Image 16' },
-    { src: require('./img/mexico/mexicocity/img17.jpeg'), alt: 'Image 17' },
-    { src: require('./img/mexico/mexicocity/img18.jpeg'), alt: 'Image 18' },
-    { src: require('./img/mexico/mexicocity/img19.jpeg'), alt: 'Image 18' },
-    { src: require('./img/mexico/mexicocity/img20.jpeg'), alt: 'Image 20' },
-    { src: require('./img/mexico/mexicocity/img21.jpeg'), alt: 'Image 21' },
-    { src: require('./img/mexico/mexicocity/img22.jpeg'), alt: 'Image 22' }
-
-
-  ];
+import '../blog-post.css'
 
 const CDMX = () => {
     return ( 
@@ -58,10 +31,6 @@ Okay so an iconic thing that I never did when I lived in Mexico before, was goin
 
 
             <p className='date-posted'>Posted on 03.07.24</p>
-            </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
             </div>
         </div>
     )

@@ -1,20 +1,6 @@
-import Gallery from '../gallery/gallery'
-import './blog-post.css'
 
-const images = [
-    { src: require('./img/california/sanfran/img1.jpeg'), alt: 'Image 1' },
-    { src: require('./img/california/sanfran/img2.jpeg'), alt: 'Image 2' },
-    { src: require('./img/california/sanfran/img3.jpg'), alt: 'Image 3' },
-    { src: require('./img/california/sanfran/img4.jpeg'), alt: 'Image 4' },
-    { src: require('./img/california/sanfran/img5.jpeg'), alt: 'Image 5' },
-    { src: require('./img/california/sanfran/img6.jpeg'), alt: 'Image 6' },
-    { src: require('./img/california/sanfran/img7.jpeg'), alt: 'Image 7' },
-    { src: require('./img/california/sanfran/img8.jpeg'), alt: 'Image 8' },
-    { src: require('./img/california/sanfran/img9.jpeg'), alt: 'Image 9' },
-    { src: require('./img/california/sanfran/img10.jpeg'), alt: 'Image 10' },
-    { src: require('./img/california/sanfran/img11.jpg'), alt: 'Image 11' },
-    { src: require('./img/california/sanfran/img12.jpeg'), alt: 'Image 12' }
-  ];
+import '../blog-post.css'
+
 
 const SanFranBlog = () => {
     return ( 
@@ -41,10 +27,6 @@ const SanFranBlog = () => {
             <p>The upcoming week marks our last week in San Francisco which is devastating as we have loved it so much here. Next stop though, is gonna be a big one for me. Think sea mammals 🐳</p>
            
             <p className='date-posted'>Posted on Monday 01.04.24</p>
-            </div>
-            <div className='gallery'>
-<Gallery images={images}/>
-
             </div>
         </div>
         

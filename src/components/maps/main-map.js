@@ -90,7 +90,10 @@ const cdmx = {
   lng: -74.07374473771112
  }
 
-
+ const guatape = {
+  lat: 6.231602509775182,
+  lng: -75.15560722306948
+ }
 
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -133,6 +136,7 @@ function MainMap () {
           <Marker position={cdmx} />
           <Marker position={costarica} />
           <Marker position={bogota} />
+          <Marker position={guatape} />
           
         </GoogleMap>
     </Container>

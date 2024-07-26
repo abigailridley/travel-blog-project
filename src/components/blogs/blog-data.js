@@ -1,4 +1,30 @@
 const BlogData = [
+    {
+        slug: 'bogota',
+        place: 'Bogotá',
+        country: 'Colombia',
+        thumbnail: require('../homepage/img/bogota.jpeg'),
+        date: '09 July 24',
+        galleryImages: [
+            { src: require('./img/colombia/bogota/img1.jpeg'), alt: 'Image 1' },
+            { src: require('./img/colombia/bogota/img2.jpeg'), alt: 'Image 2' },
+            { src: require('./img/colombia/bogota/img3.jpeg'), alt: 'Image 3' },
+            { src: require('./img/colombia/bogota/img4.jpeg'), alt: 'Image 4' },
+            { src: require('./img/colombia/bogota/img5.jpeg'), alt: 'Image 5' },
+            { src: require('./img/colombia/bogota/img6.jpeg'), alt: 'Image 6' },
+            { src: require('./img/colombia/bogota/img7.jpeg'), alt: 'Image 7' },
+            { src: require('./img/colombia/bogota/img8.jpeg'), alt: 'Image 8' },
+            { src: require('./img/colombia/bogota/img9.jpeg'), alt: 'Image 9' },
+            { src: require('./img/colombia/bogota/img10.jpeg'), alt: 'Image 10' },
+            { src: require('./img/colombia/bogota/img11.jpeg'), alt: 'Image 11' },
+            { src: require('./img/colombia/bogota/img12.jpeg'), alt: 'Image 12' },
+            { src: require('./img/colombia/bogota/img13.jpeg'), alt: 'Image 13' },
+            { src: require('./img/colombia/bogota/img14.jpeg'), alt: 'Image 14' },
+            { src: require('./img/colombia/bogota/img15.jpeg'), alt: 'Image 15' },
+            { src: require('./img/colombia/bogota/img16.jpeg'), alt: 'Image 16' },
+            { src: require('./img/colombia/bogota/img17.jpeg'), alt: 'Image 17' }
+        ]
+    },
     { 
         slug: 'costarica', 
         place: 'Tortuguero', 

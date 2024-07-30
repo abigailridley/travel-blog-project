@@ -3,6 +3,7 @@ import Gallery from '../gallery/gallery';
 import BlogData from './blog-data';
 
 // Import blog components
+import Guatape from './locations/guatape';
 import Bogota from './locations/bogota'
 import CostaRica from './locations/costarica';
 import MexicoCity from './locations/cdmx';
@@ -39,6 +40,9 @@ const BlogPost = () => {
     let BlogComponent = null;
 
     switch (slug) {
+        case 'guatape':
+            BlogComponent = <Guatape />;
+            break;
         case 'bogota':
             BlogComponent = <Bogota />;
             break;

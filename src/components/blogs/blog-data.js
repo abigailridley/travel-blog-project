@@ -1,5 +1,34 @@
 const BlogData = [
     {
+        slug: 'guatape',
+        place: 'Guatapé',
+        country: 'Colombia',
+        thumbnail: require('../homepage/img/guatape.jpeg'),
+        date: '23 July 24',
+        galleryImages: [
+            { src: require('./img/colombia/guatape/img1.jpeg'), alt: 'Image 1' },
+            { src: require('./img/colombia/guatape/img2.jpeg'), alt: 'Image 2' },
+            { src: require('./img/colombia/guatape/img3.jpeg'), alt: 'Image 3' },
+            { src: require('./img/colombia/guatape/img4.jpeg'), alt: 'Image 4' },
+            { src: require('./img/colombia/guatape/img5.jpeg'), alt: 'Image 5' },
+            { src: require('./img/colombia/guatape/img6.jpeg'), alt: 'Image 6' },
+            { src: require('./img/colombia/guatape/img7.jpeg'), alt: 'Image 7' },
+            { src: require('./img/colombia/guatape/img8.jpeg'), alt: 'Image 8' },
+            { src: require('./img/colombia/guatape/img9.jpeg'), alt: 'Image 9' },
+            { src: require('./img/colombia/guatape/img10.jpeg'), alt: 'Image 10' },
+            { src: require('./img/colombia/guatape/img11.jpeg'), alt: 'Image 11' },
+            { src: require('./img/colombia/guatape/img12.jpeg'), alt: 'Image 12' },
+            { src: require('./img/colombia/guatape/img13.jpeg'), alt: 'Image 13' },
+            { src: require('./img/colombia/guatape/img14.jpeg'), alt: 'Image 14' },
+            { src: require('./img/colombia/guatape/img15.jpeg'), alt: 'Image 15' },
+            { src: require('./img/colombia/guatape/img16.jpeg'), alt: 'Image 16' },
+            { src: require('./img/colombia/guatape/img17.jpeg'), alt: 'Image 17' },
+            { src: require('./img/colombia/guatape/img18.jpeg'), alt: 'Image 18' },
+            { src: require('./img/colombia/guatape/img19.jpeg'), alt: 'Image 19' }
+        ]
+    },
+
+    {
         slug: 'bogota',
         place: 'Bogotá',
         country: 'Colombia',

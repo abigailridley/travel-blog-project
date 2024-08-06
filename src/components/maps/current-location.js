@@ -12,11 +12,10 @@ const mapContainerStyle = {
 
 
 
- const guatape = {
-  lat: 6.231602509775182,
-  lng: -75.15560722306948
+ const riodejaneiro = {
+  lat: -22.973096876884195, 
+  lng: -43.18427126525455
  }
-
 
 function CurrentLocationMap () {
   const { isLoaded, loadError} = useJsApiLoader({
@@ -26,7 +25,7 @@ function CurrentLocationMap () {
   });
 
   const onLoad = React.useCallback(function callback() {
-    const bounds = new window.google.maps.LatLngBounds(guatape);
+    const bounds = new window.google.maps.LatLngBounds(riodejaneiro);
     return (bounds)
   }, [])
 
@@ -40,11 +39,11 @@ function CurrentLocationMap () {
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={10}
-          center={guatape}
+          center={riodejaneiro}
           onLoad={onLoad}
         onUnmount={onUnmount}
         >
-          <Marker position={guatape} />
+          <Marker position={riodejaneiro} />
         
         </GoogleMap>
       </div>

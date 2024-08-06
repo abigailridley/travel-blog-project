@@ -12,8 +12,8 @@ const mapContainerStyle = {
 };
 
 const center = {
- lat: 29.974228592019237, 
- lng: -94.38083375894192
+ lat: 22.479431573642387, 
+ lng: -83.76793246671245
  
   };
 
@@ -95,6 +95,11 @@ const cdmx = {
   lng: -75.15560722306948
  }
 
+ const riodejaneiro = {
+  lat: -22.973096876884195, 
+  lng: -43.18427126525455
+ }
+
 function MainMap () {
   const { isLoaded, loadError} = useJsApiLoader({
     id: 'google-map-script',
@@ -116,7 +121,7 @@ function MainMap () {
     <Title>Where we've been</Title>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={3.5}
+          zoom={2.5}
           center={center}
           onLoad={onLoad}
         onUnmount={onUnmount}
@@ -137,6 +142,7 @@ function MainMap () {
           <Marker position={costarica} />
           <Marker position={bogota} />
           <Marker position={guatape} />
+          <Marker position={riodejaneiro} />
           
         </GoogleMap>
     </Container>

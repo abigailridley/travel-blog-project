@@ -28,7 +28,7 @@ Of course we had to visit Christ the Redeemer. One of the 7 Wonders of the World
 <p>
 Rio felt like an excellent ending to these 6 months. I feel really ready to be going home (don’t quote me on that when I’m depressed bc British summer is so shit), and I’m really proud of us for having such a successful trip, seeing some good stuff and making good decisions. It was pretty fucking exhausting but we did it and now it is home time. Thank you for taking an interest!! This has been a great project to help me process all the moving around and celebrate each place for what it was. 
 </p>
-<div className="container">
+<div className="list-container">
             <h1 className="title">Ranking time!</h1>
             <p>We ended up going to 16 places, 2 continents, 5 countries and looked after 15 pets in 178 days.</p>
             
@@ -87,7 +87,7 @@ export default RioDeJaneiro
             
 
 const style = `
-.container {
+.list-container {
     display: flex;
     flex-direction: column; /* Ensures that the title is above the lists */
     text-align: center;

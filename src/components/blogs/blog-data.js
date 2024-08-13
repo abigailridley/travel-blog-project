@@ -1,5 +1,38 @@
 const BlogData = [
     {
+        slug: 'riodejaneiro',
+        place: 'Rio de Janeiro',
+        country: 'Brasil',
+        thumbnail: require('../homepage/img/riodejaneiro.jpeg'),
+        date: '31 July 24',
+        galleryImages: [
+            { src: require('./img/brasil/img1.jpeg'), alt: 'Image 1' },
+            { src: require('./img/brasil/img2.jpeg'), alt: 'Image 2' },
+            { src: require('./img/brasil/img3.jpeg'), alt: 'Image 3' },
+            { src: require('./img/brasil/img4.jpeg'), alt: 'Image 4' },
+            { src: require('./img/brasil/img5.jpeg'), alt: 'Image 5' },
+            { src: require('./img/brasil/img6.jpeg'), alt: 'Image 6' },
+            { src: require('./img/brasil/img7.jpeg'), alt: 'Image 7' },
+            { src: require('./img/brasil/img8.jpeg'), alt: 'Image 8' },
+            { src: require('./img/brasil/img9.jpeg'), alt: 'Image 9' },
+            { src: require('./img/brasil/img10.jpeg'), alt: 'Image 10' },
+            { src: require('./img/brasil/img11.jpeg'), alt: 'Image 11' },
+            { src: require('./img/brasil/img12.jpeg'), alt: 'Image 12' },
+            { src: require('./img/brasil/img13.jpeg'), alt: 'Image 13' },
+            { src: require('./img/brasil/img14.jpeg'), alt: 'Image 14' },
+            { src: require('./img/brasil/img15.jpeg'), alt: 'Image 15' },
+            { src: require('./img/brasil/img16.jpeg'), alt: 'Image 16' },
+            { src: require('./img/brasil/img17.jpeg'), alt: 'Image 17' },
+            { src: require('./img/brasil/img18.jpeg'), alt: 'Image 18' },
+            { src: require('./img/brasil/img20.jpeg'), alt: 'Image 20' },
+            { src: require('./img/brasil/img21.jpeg'), alt: 'Image 21' },
+            { src: require('./img/brasil/img22.jpeg'), alt: 'Image 22' },
+            { src: require('./img/brasil/img23.jpeg'), alt: 'Image 23' },
+            { src: require('./img/brasil/img24.jpeg'), alt: 'Image 21' },
+            { src: require('./img/brasil/img25.jpeg'), alt: 'Image 21' }
+        ]
+    },
+    {
         slug: 'guatape',
         place: 'Guatapé',
         country: 'Colombia',

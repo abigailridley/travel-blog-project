@@ -1,5 +1,5 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import React from "react";
+import React, { useCallback } from "react";
 import styled from "styled-components";
 
 const mapContainerStyle = {
@@ -17,10 +17,12 @@ const portland = {
   lat: 45.512359076694025,
   lng: -122.62552755809351,
 };
+
 const seattle = {
   lat: 47.54522514901589,
   lng: -122.3216516502634,
 };
+
 const oakland = {
   lat: 37.808123100884046,
   lng: -122.2501924320138,
@@ -65,10 +67,12 @@ const guadalajara = {
   lat: 20.672975927669984,
   lng: -103.35904804752992,
 };
+
 const sanmiguel = {
   lat: 20.914434736925376,
   lng: -100.74550833655884,
 };
+
 const cdmx = {
   lat: 19.419604630135037,
   lng: -99.18634925800836,
@@ -94,18 +98,20 @@ const riodejaneiro = {
   lng: -43.18427126525455,
 };
 
+// Add other locations (seattle, oakland, etc.)
+
 function MainMap() {
   const { isLoaded, loadError } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY, // Use API key directly from .env
   });
 
-  const onLoad = React.useCallback(function callback() {
+  const onLoad = useCallback(function callback() {
     const bounds = new window.google.maps.LatLngBounds(portland);
     return bounds;
   }, []);
 
-  const onUnmount = React.useCallback(function callback() {}, []);
+  const onUnmount = useCallback(function callback() {}, []);
 
   return isLoaded ? (
     <Container>
@@ -152,12 +158,11 @@ const Title = styled.div`
   margin-top: 10px;
   color: #006642;
 `;
+
 const Container = styled.div`
   background-color: #effded;
-
   border-radius: 10px;
   display: grid;
-
   justify-items: center;
   padding: 10px;
 `;

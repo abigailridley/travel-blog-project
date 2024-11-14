@@ -64,7 +64,7 @@
 
 .gallery-image {
   max-width: 40%;
-  transition: transform 0.3s ease; /* Add transition for smooth enlargement */
+  transition: transform 0.3s ease;
 }
 
 .enlarged {

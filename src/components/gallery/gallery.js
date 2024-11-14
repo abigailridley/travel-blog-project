@@ -7,7 +7,7 @@ const Gallery = ({ images }) => {
 
   const nextImage = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    setIsEnlarged(false); // Reset enlargement when changing images
+    setIsEnlarged(false);
   }, [images.length]);
 
   const prevImage = useCallback(() => {
